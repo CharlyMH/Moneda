@@ -78,7 +78,7 @@ class lamina implements ActionListener {
     }
 
     private void Evento() {
-        if (isNumeric(t1.getText()) && Integer.parseInt(t1.getText()) < 0) {
+        if (isNumeric(t1.getText()) && Integer.parseInt(t1.getText()) >= 0) {
             mi.lanazamientos(Integer.parseInt(t1.getText()));
             t2.setText(String.valueOf(mi.getCaras()));
             t3.setText(String.valueOf(mi.getCruces()));
